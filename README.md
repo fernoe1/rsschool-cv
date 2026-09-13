@@ -1,1 +1,3 @@
-# rsschool-cv
+> https://fernoe1.github.io/rsschool-cv/cv
+
+> https://fernoe1.github.io/rsschool-cv/
