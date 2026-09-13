@@ -3,98 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
     <title>Temirlan Sapargali</title>
 </head>
 <body>
     <header>
+        <nav>
+            <ul class="navList">
+                <li class="navListItem"><a href="#contact">Contacts</a></li>
+                <li class="navListItem"><a href="#shortInfo">Short info</a></li>
+                <li class="navListItem"><a href="#skill">Skills</a></li>
+                <li class="navListItem"><a href="#code">Code example</a></li>
+                <li class="navListItem"><a href="#experience">Experience</a></li>
+                <li class="navListItem"><a href="#education">Education</a></li>
+                <li class="navListItem"><a href="#english">English</a></li>
+            </ul>
+        </nav>
         <h1>Temirlan Sapargali</h1>
     </header>
+    <hr>
 
     <main>
-        <section>
+        <section id="contact">
             <h2>Contacts</h2>
-            <ul>
+            <ul class="contactList">
                 <li>Email: <a href="mailto:krutoytemirlan2007@gmail.com">krutoytemirlan2007@gmail.com</a></li>
                 <li>Telegram: <a href="https://t.me/Fernoel" target="_blank">@Fernoel</a></li>
             </ul>
         </section>
+        <hr>
 
-        <section>
+        <section id="shortInfo">
             <h2>Short info</h2>
             <p>
-                I want to become competent front-end developer who's able to utilize technologies like three.js, GSAP, and react to realize my own design ideas.
+                I want to become competent front-end developer who's able to utilize technologies like Three.js, GSAP, and React to realize my own design ideas.
             </p>
         </section>
+        <hr>
 
-        <section>
+        <section id="skill">
             <h2>Skills</h2>
-            <ul>
+            <ul class="skillsList">
                 <li>React</li>
-                <li>Golang</li>
-                <li>JavaScript</li>
-                <li>Java</li>
-                <li>OpenTelemetry</li>
-                <li>Git</li>
                 <li>Three.js</li>
                 <li>GSAP</li>
             </ul>
         </section>
+        <hr>
 
-        <section>
+        <section id="code">
             <h2>Code example</h2>
             <pre><code>
-package problems;
-
-import java.util.Scanner;
-
-public class Problem9 {
-    public static void start() {
-        Scanner sc = new Scanner(System.in); // Initializing Scanner to read user input
-        // Base parameters
-        System.out.println("Enter the binomial coefficients n and k");
-        int n = sc.nextInt();
-        int k = sc.nextInt();
-
-        double startTime = System.nanoTime();
-        System.out.println(binomialCoefficient(n, k));
-        double endTime = System.nanoTime();
-        System.out.println("Time taken: " + ((endTime - startTime) / 1000000) + " milliseconds");
-    }
-
-
-    /**
-    * Returns binomial coefficient at specified <b>n</b> and <b>k</b>. <br>
-    * Runs in O(2<sup>n</sup>) complexity.
-    * @param n Specified parameter.
-    * @param k Specified parameter.
-    * @return Binomial coefficient at specified parameters.
-    */
-    public static int binomialCoefficient(int n, int k) {
-        if (k &lt; 0 || n &lt; 0) {
-            throw new IllegalArgumentException("Negative binomial coefficient parameters");
-        }
-
-        if (k == 0 || k == n) {
-            return 1;
-        }
-
-        return binomialCoefficient(n - 1, k - 1) + binomialCoefficient(n - 1, k);
-    }
-}
+const multiply = (a, b) => a * b;
             </code></pre>
         </section>
+        <hr>
 
-        <section>
+        <section id="experience">
             <h2>Experience</h2>
             <p><a href="https://github.com/fernoe1/threedaitumap">threedaitumap</a> (React, js, three.js) 3D interior map of my campus that I'm currently working on.</p>
         </section>
+        <hr>
 
-        <section>
+        <section id="education">
             <h2>Education</h2>
             <p>Astana IT University</p>
         </section>
+        <hr>
 
-        <section>
+        <section id="english">
             <h2>English</h2>
             <p>B2</p>
         </section>
